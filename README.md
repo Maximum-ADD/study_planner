@@ -3,6 +3,116 @@ This is an app we want to build so that we have some sort of project under our b
 
 
 
+**React Native Setup Guide (Basic Use Only)**
+For teammates who need to download, open, and run a React Native app without building it from scratch.
+
+---
+
+**1. Install Node.js**
+
+* Go to: [https://nodejs.org](https://nodejs.org)
+* Download the **LTS version (.msi)**
+* Install with default settings (ensure npm is included)
+* Confirm installation in terminal:
+
+  ```bash
+  node -v  
+  npm -v
+  ```
+
+---
+
+**2. Install Java Development Kit (JDK)**
+
+* Go to: [https://adoptium.net](https://adoptium.net)
+* Download **Temurin OpenJDK 17 MSI**
+* Install with default settings
+* Confirm:
+
+  ```bash
+  java -version  
+  javac -version
+  ```
+
+---
+
+**3. Install Android Studio**
+
+* Download from: [https://developer.android.com/studio](https://developer.android.com/studio)
+* During install, select:
+
+  * Android SDK
+  * Android SDK Platform
+  * Android Virtual Device (AVD)
+* Open Android Studio → AVD Manager → Create and launch emulator
+
+---
+
+**4. Set up Environment Variables**
+Add this to `.bashrc`, `.zshrc`, or Windows `Environment Variables`:
+
+```sh
+ANDROID_HOME=<your SDK path>
+# Typically: C:\Users\<YourUser>\AppData\Local\Android\Sdk
+
+Add to PATH:
+%ANDROID_HOME%\platform-tools
+%ANDROID_HOME%\emulator
+```
+
+---
+
+**5. Clone or Receive the React Native App Folder**
+
+* Download project folder from GitHub or shared drive
+* Open it in **Visual Studio Code** or any editor
+
+---
+
+**6. Install App Dependencies**
+Open terminal inside the project folder:
+
+```bash
+npm install
+```
+
+---
+
+**7. Start Android Emulator**
+
+* Open Android Studio → AVD Manager → Launch a virtual device
+  OR
+
+```bash
+emulator -avd <your_device_name>
+```
+
+---
+
+**8. Run the App**
+Inside project folder:
+
+```bash
+npx react-native run-android
+```
+
+---
+
+**9. Make Edits (Optional)**
+
+* Open `App.js` in VS Code
+* Change UI or logic
+* Save and re-run app to see updates
+
+---
+
+**10. Troubleshooting**
+
+* If `npm` fails in PowerShell, use Command Prompt (`cmd.exe`)
+* Restart terminal after installing Node or JDK
+* Ensure emulator is running before `npx react-native run-android`
+
+Done. They can now open, edit, and run a React Native app.
 
 
 
