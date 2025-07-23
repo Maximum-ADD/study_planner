@@ -1,5 +1,15 @@
 # study_planner
 This is an app we want to build so that we have some sort of project under our belt that is not owned by Wits University. It will schedule study sessions from a user's subject list, stated study preference, focus list, and user provided test dates. The user should then be able to edit their schedule and save it as a pdf or other file.
+
+
+
+
+
+
+
+
+
+ This is for Adrian who is setting up the app:
 **React Native Setup (from zero)**
 
 1. **Install Node.js**
